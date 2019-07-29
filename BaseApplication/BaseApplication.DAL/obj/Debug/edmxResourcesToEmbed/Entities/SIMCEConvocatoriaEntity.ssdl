@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SIMCE_CONVOCATORIAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Postulante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RUT" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="RUTDigitoVerificador" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Nombre_1" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nombre_2" Type="varchar" MaxLength="50" />
+    <Property Name="ApellidoPaterno" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="varchar" MaxLength="50" />
+    <Property Name="FechaNacimiento" Type="date" Nullable="false" />
+    <Property Name="Sexo" Type="varchar" MaxLength="1" />
+    <Property Name="IdRegion" Type="int" />
+  </EntityType>
+  <EntityType Name="TABGEN_Region">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Orden" Type="int" />
+  </EntityType>
+  <Association Name="FK_Postulante_TABGEN_Region">
+    <End Role="TABGEN_Region" Type="Self.TABGEN_Region" Multiplicity="0..1" />
+    <End Role="Postulante" Type="Self.Postulante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TABGEN_Region">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Postulante">
+        <PropertyRef Name="IdRegion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SIMCE_CONVOCATORIAModelStoreContainer">
+    <EntitySet Name="Postulante" EntityType="Self.Postulante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TABGEN_Region" EntityType="Self.TABGEN_Region" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Postulante_TABGEN_Region" Association="Self.FK_Postulante_TABGEN_Region">
+      <End Role="TABGEN_Region" EntitySet="TABGEN_Region" />
+      <End Role="Postulante" EntitySet="Postulante" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

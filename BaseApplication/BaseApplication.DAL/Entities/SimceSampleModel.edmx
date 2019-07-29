@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SimceSampleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Comuna">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ComunaDescription" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RegionId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Examinador">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Rut" Type="int" Nullable="false" />
+          <Property Name="RutDv" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Sex" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Birthdate" Type="date" Nullable="false" />
+          <Property Name="Cellphone" Type="int" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PaymentAmount" Type="float" Nullable="false" />
+          <Property Name="ComunaId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ExaminadorRol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExaminadorId" Type="int" Nullable="false" />
+          <Property Name="RolId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Region">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RegionDescription" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RolDescription" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Comuna_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="Comuna" Type="Self.Comuna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comuna">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Examinador_Comuna">
+          <End Role="Comuna" Type="Self.Comuna" Multiplicity="1" />
+          <End Role="Examinador" Type="Self.Examinador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Comuna">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Examinador">
+              <PropertyRef Name="ComunaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExaminadorRol_Examinador">
+          <End Role="Examinador" Type="Self.Examinador" Multiplicity="1" />
+          <End Role="ExaminadorRol" Type="Self.ExaminadorRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Examinador">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExaminadorRol">
+              <PropertyRef Name="ExaminadorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExaminadorRol_Rol">
+          <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
+          <End Role="ExaminadorRol" Type="Self.ExaminadorRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExaminadorRol">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SimceSampleModelStoreContainer">
+          <EntitySet Name="Comuna" EntityType="Self.Comuna" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Examinador" EntityType="Self.Examinador" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExaminadorRol" EntityType="Self.ExaminadorRol" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Region" EntityType="Self.Region" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Comuna_Region" Association="Self.FK_Comuna_Region">
+            <End Role="Region" EntitySet="Region" />
+            <End Role="Comuna" EntitySet="Comuna" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Examinador_Comuna" Association="Self.FK_Examinador_Comuna">
+            <End Role="Comuna" EntitySet="Comuna" />
+            <End Role="Examinador" EntitySet="Examinador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExaminadorRol_Examinador" Association="Self.FK_ExaminadorRol_Examinador">
+            <End Role="Examinador" EntitySet="Examinador" />
+            <End Role="ExaminadorRol" EntitySet="ExaminadorRol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExaminadorRol_Rol" Association="Self.FK_ExaminadorRol_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="ExaminadorRol" EntitySet="ExaminadorRol" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SimceSampleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Comuna">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComunaDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RegionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Region" Relationship="Self.FK_Comuna_Region" FromRole="Comuna" ToRole="Region" />
+          <NavigationProperty Name="Examinador" Relationship="Self.FK_Examinador_Comuna" FromRole="Comuna" ToRole="Examinador" />
+        </EntityType>
+        <EntityType Name="Examinador">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Rut" Type="Int32" Nullable="false" />
+          <Property Name="RutDv" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sex" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Birthdate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Cellphone" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PaymentAmount" Type="Double" Nullable="false" />
+          <Property Name="ComunaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Comuna" Relationship="Self.FK_Examinador_Comuna" FromRole="Examinador" ToRole="Comuna" />
+          <NavigationProperty Name="ExaminadorRol" Relationship="Self.FK_ExaminadorRol_Examinador" FromRole="Examinador" ToRole="ExaminadorRol" />
+        </EntityType>
+        <EntityType Name="ExaminadorRol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExaminadorId" Type="Int32" Nullable="false" />
+          <Property Name="RolId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Examinador" Relationship="Self.FK_ExaminadorRol_Examinador" FromRole="ExaminadorRol" ToRole="Examinador" />
+          <NavigationProperty Name="Rol" Relationship="Self.FK_ExaminadorRol_Rol" FromRole="ExaminadorRol" ToRole="Rol" />
+        </EntityType>
+        <EntityType Name="Region">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RegionDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Comuna" Relationship="Self.FK_Comuna_Region" FromRole="Region" ToRole="Comuna" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RolDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="ExaminadorRol" Relationship="Self.FK_ExaminadorRol_Rol" FromRole="Rol" ToRole="ExaminadorRol" />
+        </EntityType>
+        <Association Name="FK_Comuna_Region">
+          <End Role="Region" Type="Self.Region" Multiplicity="1" />
+          <End Role="Comuna" Type="Self.Comuna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Region">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Comuna">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Examinador_Comuna">
+          <End Role="Comuna" Type="Self.Comuna" Multiplicity="1" />
+          <End Role="Examinador" Type="Self.Examinador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Comuna">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Examinador">
+              <PropertyRef Name="ComunaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExaminadorRol_Examinador">
+          <End Role="Examinador" Type="Self.Examinador" Multiplicity="1" />
+          <End Role="ExaminadorRol" Type="Self.ExaminadorRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Examinador">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExaminadorRol">
+              <PropertyRef Name="ExaminadorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ExaminadorRol_Rol">
+          <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
+          <End Role="ExaminadorRol" Type="Self.ExaminadorRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExaminadorRol">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SimceSampleDbConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Comuna" EntityType="Self.Comuna" />
+          <EntitySet Name="Examinador" EntityType="Self.Examinador" />
+          <EntitySet Name="ExaminadorRol" EntityType="Self.ExaminadorRol" />
+          <EntitySet Name="Region" EntityType="Self.Region" />
+          <EntitySet Name="Rol" EntityType="Self.Rol" />
+          <AssociationSet Name="FK_Comuna_Region" Association="Self.FK_Comuna_Region">
+            <End Role="Region" EntitySet="Region" />
+            <End Role="Comuna" EntitySet="Comuna" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Examinador_Comuna" Association="Self.FK_Examinador_Comuna">
+            <End Role="Comuna" EntitySet="Comuna" />
+            <End Role="Examinador" EntitySet="Examinador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExaminadorRol_Examinador" Association="Self.FK_ExaminadorRol_Examinador">
+            <End Role="Examinador" EntitySet="Examinador" />
+            <End Role="ExaminadorRol" EntitySet="ExaminadorRol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ExaminadorRol_Rol" Association="Self.FK_ExaminadorRol_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="ExaminadorRol" EntitySet="ExaminadorRol" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SimceSampleModelStoreContainer" CdmEntityContainer="SimceSampleDbConnection">
+          <EntitySetMapping Name="Comuna">
+            <EntityTypeMapping TypeName="SimceSampleModel.Comuna">
+              <MappingFragment StoreEntitySet="Comuna">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ComunaDescription" ColumnName="ComunaDescription" />
+                <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Examinador">
+            <EntityTypeMapping TypeName="SimceSampleModel.Examinador">
+              <MappingFragment StoreEntitySet="Examinador">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Rut" ColumnName="Rut" />
+                <ScalarProperty Name="RutDv" ColumnName="RutDv" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Birthdate" ColumnName="Birthdate" />
+                <ScalarProperty Name="Cellphone" ColumnName="Cellphone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+                <ScalarProperty Name="ComunaId" ColumnName="ComunaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExaminadorRol">
+            <EntityTypeMapping TypeName="SimceSampleModel.ExaminadorRol">
+              <MappingFragment StoreEntitySet="ExaminadorRol">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ExaminadorId" ColumnName="ExaminadorId" />
+                <ScalarProperty Name="RolId" ColumnName="RolId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Region">
+            <EntityTypeMapping TypeName="SimceSampleModel.Region">
+              <MappingFragment StoreEntitySet="Region">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="RegionDescription" ColumnName="RegionDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rol">
+            <EntityTypeMapping TypeName="SimceSampleModel.Rol">
+              <MappingFragment StoreEntitySet="Rol">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="RolDescription" ColumnName="RolDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{aa8a8aff-8a85-451f-9966-342abb7fae79}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>BaseApplication.Modeling</Name>
+    <RootNamespace>BaseApplication.Modeling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\BaseApplication.Modeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="BaseApplication.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="BaseApplication.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BaseApplication.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="BaseApplication.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>BaseApplication.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseApplication.BLL\BaseApplication.BLL.csproj">
+      <Name>BaseApplication.BLL</Name>
+      <Project>{8ed4e50e-e97b-4ca4-93c0-318982be4684}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseApplication.CrossCutting\BaseApplication.CrossCutting.csproj">
+      <Name>BaseApplication.Crosscutting</Name>
+      <Project>{15704acf-961d-4c2f-9383-fd4950524097}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseApplication.DAL\BaseApplication.DAL.csproj">
+      <Name>BaseApplication.DAL</Name>
+      <Project>{d5075125-fec3-4ccd-8054-612efdecf09f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseApplication.Resources\BaseApplication.Resources.csproj">
+      <Name>BaseApplication.Resources</Name>
+      <Project>{9fc5f50d-5340-4cc7-9175-a893106df7f4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseApplication.SL\BaseApplication.SL.csproj">
+      <Name>BaseApplication.SL</Name>
+      <Project>{03717222-b8da-430d-9298-da45b299210c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseApplication.Web\BaseApplication.Web.csproj">
+      <Name>BaseApplication.Web</Name>
+      <Project>{dd811917-2027-4aeb-9dfd-f3d3419bea08}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

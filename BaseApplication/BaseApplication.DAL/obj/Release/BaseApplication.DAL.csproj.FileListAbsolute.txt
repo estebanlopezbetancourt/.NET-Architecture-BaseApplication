@@ -1,0 +1,11 @@
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\BaseApplication.DAL.dll.config
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\BaseApplication.DAL.dll
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\BaseApplication.DAL.pdb
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\EntityFramework.dll
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\System.Data.SqlClient.dll
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\EntityFramework.xml
+C:\Dev\BaseApplication\BaseApplication.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Dev\BaseApplication\BaseApplication.DAL\obj\Release\BaseApplication.DAL.csprojResolveAssemblyReference.cache
+C:\Dev\BaseApplication\BaseApplication.DAL\obj\Release\BaseApplication.DAL.dll
+C:\Dev\BaseApplication\BaseApplication.DAL\obj\Release\BaseApplication.DAL.pdb

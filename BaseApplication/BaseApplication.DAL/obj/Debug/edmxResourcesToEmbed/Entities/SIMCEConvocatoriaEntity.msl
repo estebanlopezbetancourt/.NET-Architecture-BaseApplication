@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SIMCE_CONVOCATORIAModelStoreContainer" CdmEntityContainer="SIMCE_CONVOCATORIAEntities">
+    <EntitySetMapping Name="Postulante">
+      <EntityTypeMapping TypeName="SIMCE_CONVOCATORIAModel.Postulante">
+        <MappingFragment StoreEntitySet="Postulante">
+          <ScalarProperty Name="IdRegion" ColumnName="IdRegion" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="Nombre_2" ColumnName="Nombre_2" />
+          <ScalarProperty Name="Nombre_1" ColumnName="Nombre_1" />
+          <ScalarProperty Name="RUTDigitoVerificador" ColumnName="RUTDigitoVerificador" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TABGEN_Region">
+      <EntityTypeMapping TypeName="SIMCE_CONVOCATORIAModel.TABGEN_Region">
+        <MappingFragment StoreEntitySet="TABGEN_Region">
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

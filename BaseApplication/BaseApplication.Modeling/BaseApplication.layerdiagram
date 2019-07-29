@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="28e3e5c2-8e78-4e06-8a63-c700eaac638d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="ba73e661-e9a7-471d-83f4-d0ac20055ff7" name="Comment1">
+      <body>Application
+Domain</body>
+    </comment>
+    <comment Id="883e45d1-8f9c-456f-9c24-25857c5c0838" name="Comment11">
+      <body>Functional 
+'Domain'</body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="f64711ae-7e28-41f7-bc77-26232c548266" name="BaseApplication.Web">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="080f6608-2f5a-4c0f-bfc3-897a035c8039" direction="Forward">
+          <layerMoniker Id="c06f80b1-3c92-4b96-af5d-0ee0b7213ba9" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="9c076849-1cee-44c0-9135-1483ac3a0497" name="Views">
+          <references>
+            <reference Id="9fdf0dea-661a-47cf-9bef-ec30c8e4fcdc" name="Views">
+              <ArtifactNode Label="Views" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.Web/BaseApplication.Web.csproj File=../BaseApplication.Web/Views/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="ed06eb69-2e1d-494f-91c2-90b434faec74" name="Controllers">
+          <references>
+            <reference Id="b2d1d6af-9d2e-4834-8458-59e3bf624a6a" name="Controllers">
+              <ArtifactNode Label="Controllers" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.Web/BaseApplication.Web.csproj File=../BaseApplication.Web/Controllers/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="00d8a19b-88b4-4422-9149-75e177769049" name="BaseApplication.Web">
+          <ArtifactNode Label="BaseApplication.Web" Category="CodeSchema_Project" Id="(Assembly=../BaseApplication.Web/BaseApplication.Web.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BaseApplication.Web)" Label="BaseApplication.Web.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="c06f80b1-3c92-4b96-af5d-0ee0b7213ba9" name="BaseApplication.SL">
+      <childLayers>
+        <layer Id="3b4f20f1-d21d-4587-a9d3-3c78fa48ccbc" name="Services (contracts)">
+          <references>
+            <reference Id="4345dc76-1741-481e-9954-e76167fbecf0" name="Services">
+              <ArtifactNode Label="Services" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.SL/BaseApplication.SL.csproj File=../BaseApplication.SL/Services/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="d848d141-d6d7-4897-8dd6-b91521006346" name="DTOs">
+          <references>
+            <reference Id="d11581f4-a31d-4723-99f4-1d99e48d2359" name="DTO">
+              <ArtifactNode Label="DTO" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.SL/BaseApplication.SL.csproj File=../BaseApplication.SL/DTO/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="fd96c8c6-608a-4853-b80d-7444b93d0daf" name="BaseApplication.SL">
+          <ArtifactNode Label="BaseApplication.SL" Category="CodeSchema_Project" Id="(Assembly=../BaseApplication.SL/BaseApplication.SL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BaseApplication.SL)" Label="BaseApplication.SL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="5b710bd3-efc7-471a-9779-c6c50db2e14c" name="DTO">
+          <ArtifactNode Label="DTO" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.SL/BaseApplication.SL.csproj File=../BaseApplication.SL/DTO/)">
+            <Category Ref="ProjectFolder" />
+          </ArtifactNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="81a2d80a-94b3-40ef-87e7-87e65ef53d29" name="BaseApplication.BLL">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="cdfeab17-7c61-4b8e-bdad-121acadca8a5" direction="Forward">
+          <layerMoniker Id="c06f80b1-3c92-4b96-af5d-0ee0b7213ba9" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="43dea1c1-9967-463d-aeb6-fe3bde8de5db" name="ModelMapper">
+          <references>
+            <reference Id="8ea4b0f4-0994-41e9-849e-e1288c89b3d0" name="ModelMapper">
+              <ArtifactNode Label="ModelMapper" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/ModelMapper/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="2394012e-334a-4fd7-8e55-a3d63db1b274" name="BusinessHelpers">
+          <references>
+            <reference Id="d22575a0-9cc1-44ea-a42e-c5d8595f12fc" name="BusinessHelpers">
+              <ArtifactNode Label="BusinessHelpers" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/BusinessHelpers/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="71e9b18e-9d29-41e4-ad84-9af733f46dd3" name="Service &#xD;&#xA;Implementions">
+          <references>
+            <reference Id="0a13772c-3841-40c2-bca6-37c31c70cd52" name="ServiceImplementions">
+              <ArtifactNode Label="ServiceImplementions" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/ServiceImplementions/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="6295b71e-b14d-4794-ac6b-f215858fd883" name="Validators">
+          <references>
+            <reference Id="4da99501-f90f-47be-9b38-a8e0060850fa" name="Validators">
+              <ArtifactNode Label="Validators" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/Validators/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="021b10aa-f38d-4ec5-8b86-dbb598f4165d" name="BaseApplication.BLL">
+          <ArtifactNode Label="BaseApplication.BLL" Category="CodeSchema_Project" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BaseApplication.BLL)" Label="BaseApplication.BLL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="f179bc7a-f35f-4613-8630-93a86cd5c07b" name="BaseApplication.DAL">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7210d0a6-e124-42dd-afde-56b7c8dd7469" direction="Forward">
+          <layerMoniker Id="81a2d80a-94b3-40ef-87e7-87e65ef53d29" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="aafde3c9-3e27-48e6-a580-f95bc8df32b6" name="Core">
+          <childLayers>
+            <layer Id="69d9b720-5ee6-4fa9-8132-1e0f54b7222a" name="IDao">
+              <references>
+                <reference Id="f8212a1b-a1f6-4516-9078-53e0d7bbaf2c" name="IDao">
+                  <ArtifactNode Label="IDao" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj File=../BaseApplication.DAL/Core/IDao/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="1f550bfe-6b8f-4732-9525-077ea3be84f0" name="IDataService">
+              <references>
+                <reference Id="b65c47a4-7e4b-4ee7-a2a4-bf5c93668e46" name="IDataService">
+                  <ArtifactNode Label="IDataService" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj File=../BaseApplication.DAL/Core/IDataService/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="75ca1c36-2820-4373-bbe6-ff8939448aa2" name="&#xD;&#xA;DataAccess">
+              <references>
+                <reference Id="e0a1a919-433c-4137-ad7f-4dabdf3e2be9" name="DataAccess.cs">
+                  <ArtifactNode Label="DataAccess.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj File=../BaseApplication.DAL/Core/DataAccess.cs)">
+                    <Category Ref="File" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=BaseApplication.DAL Namespace=BaseApplication.DAL.Core Type=DataAccess)" Label="DataAccess" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Contains" />
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="7ebf4b16-3ff8-4554-a2f5-ecb98cdbb65f" name="Core">
+              <ArtifactNode Label="Core" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj File=../BaseApplication.DAL/Core/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="08d3ee50-a738-4962-90ff-23304a5c1b3d" name="Entities">
+          <references>
+            <reference Id="50bf56fd-dce8-4c79-95bc-c23de5ba4b0b" name="Entities">
+              <ArtifactNode Label="Entities" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj File=../BaseApplication.DAL/Entities/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="69ca4514-1b76-472c-94c7-f9c532c52a40" name="Implementations">
+          <references>
+            <reference Id="775b0fe0-1f62-48cc-9a5d-d2ebdfe2b292" name="Implementations">
+              <ArtifactNode Label="Implementations" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj File=../BaseApplication.DAL/Implementations/)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="b464856f-9630-4eee-b04b-e79acd9d6a4d" name="BaseApplication.DAL">
+          <ArtifactNode Label="BaseApplication.DAL" Category="CodeSchema_Project" Id="(Assembly=../BaseApplication.DAL/BaseApplication.DAL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BaseApplication.DAL)" Label="BaseApplication.DAL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="63af233e-25bc-47fb-b061-fa960913fc61" name="Aspect Layer">
+      <childLayers>
+        <layer Id="93a48789-b57d-44fa-b455-05d78683d4be" name="BaseApplication.&#xD;&#xA;Crosscutting">
+          <childLayers>
+            <layer Id="96928d9d-4c0b-45a5-a5f5-3035c8222d58" name="ExceptionHandling">
+              <references>
+                <reference Id="851497b9-128c-407d-8915-01d345d2632e" name="ExceptionHandling">
+                  <ArtifactNode Label="ExceptionHandling" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.Crosscutting/BaseApplication.Crosscutting.csproj File=../BaseApplication.Crosscutting/ExceptionHandling/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="4a2ecb5b-beed-4b0c-b995-ef985e592a70" name="Logging">
+              <references>
+                <reference Id="a3c22798-296c-48a6-9db1-58078a6cdfbc" name="Logging">
+                  <ArtifactNode Label="Logging" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.Crosscutting/BaseApplication.Crosscutting.csproj File=../BaseApplication.Crosscutting/Logging/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="2cb8ca76-cdff-4722-8dbb-1d86eca1eb03" name="Security">
+              <references>
+                <reference Id="b68e474f-1953-4b82-87ae-bfa2bef35794" name="Security">
+                  <ArtifactNode Label="Security" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.Crosscutting/BaseApplication.Crosscutting.csproj File=../BaseApplication.Crosscutting/Security/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="d4b8daeb-8dc0-41fe-812d-78b10ad36dd0" name="BaseApplication.Crosscutting">
+              <ArtifactNode Label="BaseApplication.Crosscutting" Category="CodeSchema_Project" Id="(Assembly=../BaseApplication.Crosscutting/BaseApplication.Crosscutting.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=BaseApplication.Crosscutting)" Label="BaseApplication.Crosscutting.dll" Category="CodeSchema_Assembly">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="7b6bb0a9-227e-46c1-8a35-d72ed534aa94" name="BaseApplication.&#xD;&#xA;Resources">
+          <references>
+            <reference Id="1b272042-5399-4c9a-bd1a-b69707368e32" name="BaseApplication.Resources">
+              <ArtifactNode Label="BaseApplication.Resources" Category="CodeSchema_Project" Id="(Assembly=../BaseApplication.Resources/BaseApplication.Resources.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=BaseApplication.Resources)" Label="BaseApplication.Resources.dll" Category="CodeSchema_Assembly">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="dc72cd6e-6a74-409b-bdfd-54954ccd8cec" name="Fuentes de Datos">
+      <childLayers>
+        <layer Id="8b84e13d-2290-4a7b-9ba9-1a665b02ab6d" name="Base de Datos Relacional">
+          <references>
+            <reference Id="5505186b-4a99-4a74-90ed-af62228621b7" name="BusinessHelpers">
+              <ArtifactNode Label="BusinessHelpers" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/BusinessHelpers/)" />
+            </reference>
+          </references>
+        </layer>
+        <layer Id="2cc6ae73-d584-4c70-b597-b4771ec192e3" name="Web Services">
+          <references>
+            <reference Id="5e1d7dec-f487-49e5-92c3-d71298f71c43" name="BusinessHelpers">
+              <ArtifactNode Label="BusinessHelpers" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/BusinessHelpers/)" />
+            </reference>
+          </references>
+        </layer>
+        <layer Id="1e0a2c81-2065-4daf-8113-f3e960ea70b1" name="XML Documents,&#xD;&#xA;csv files, etc">
+          <references>
+            <reference Id="aa188a52-f875-4418-96f1-c118b802d692" name="BusinessHelpers">
+              <ArtifactNode Label="BusinessHelpers" Category="CodeSchema_ProjectItem" Id="(Assembly=../BaseApplication.BLL/BaseApplication.BLL.csproj File=../BaseApplication.BLL/BusinessHelpers/)" />
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

@@ -1,0 +1,21 @@
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\BaseApplication.DAL.dll.config
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\BaseApplication.DAL.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\BaseApplication.DAL.pdb
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.xml
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\obj\Debug\BaseApplication.DAL.csprojResolveAssemblyReference.cache
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\obj\Debug\BaseApplication.DAL.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.DAL\obj\Debug\BaseApplication.DAL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\obj\Debug\BaseApplication.DAL.csprojResolveAssemblyReference.cache
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\BaseApplication.DAL.dll.config
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\BaseApplication.DAL.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\BaseApplication.DAL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.xml
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\obj\Debug\BaseApplication.DAL.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\obj\Debug\BaseApplication.DAL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.DAL\bin\Debug\System.Data.SqlClient.dll

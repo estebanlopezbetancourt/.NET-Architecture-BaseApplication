@@ -1,0 +1,519 @@
+﻿<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Data Dictionary Creator</Author>
+  <LastAuthor>DELL VOSTRO</LastAuthor>
+  <Created>2014-12-26T20:49:31Z</Created>
+  <LastSaved>2014-12-26T21:03:36Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Bold="1"/>
+   <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Tables">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="150">
+   <Column ss:Index="3" ss:Width="300"/>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">__MigrationHistory</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AspNetRoles</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Esta tabla contiene los roles que se manejarán en las aplicaciones Simce</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AspNetUserClaims</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Esta tabla se usa para añadir mas información a las cuentas, usando claims</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AspNetUserLogins</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Esta cuenta maneja los distintos Logins del sistema, como diferentes providers de auth. No es usado en Simce</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AspNetUserRoles</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Esta tabla relaciona a los usuarios con los roles</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Esta tabla contiene las cuentas de usuario</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Columns">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="33" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="150">
+   <Column ss:Width="44.25"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="125.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90"/>
+   <Column ss:AutoFitWidth="0" ss:Width="33"/>
+   <Column ss:StyleID="s73" ss:Width="75"/>
+   <Column ss:StyleID="s73" ss:AutoFitWidth="0" ss:Width="45"/>
+   <Column ss:StyleID="s73" ss:AutoFitWidth="0" ss:Width="30"/>
+   <Column ss:Width="300"/>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Column</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Nullable</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Is in PK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">__MigrationHistory</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">MigrationId</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (150)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">150</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">__MigrationHistory</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ContextKey</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (300)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">300</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">__MigrationHistory</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Model</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">VarBinaryMax</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">-1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">__MigrationHistory</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ProductVersion</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (32)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">32</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Column</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Nullable</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Is in PK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetRoles</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Id</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ID autogenerado por Sistema</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetRoles</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (256)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">256</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Nombre del Rol</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Column</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Nullable</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Is in PK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserClaims</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Id</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Int</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Id autogenerado del Claim</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserClaims</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">UserId</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ID del Usuario</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserClaims</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ClaimType</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarCharMax</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">-1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Tiipo de Claim</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserClaims</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ClaimValue</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarCharMax</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">-1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Valor del Claim</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Column</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Nullable</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Is in PK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserLogins</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">LoginProvider</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserLogins</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ProviderKey</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserLogins</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">UserId</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Column</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Nullable</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Is in PK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserRoles</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">UserId</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ID del usuario</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUserRoles</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">RoleId</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ID del Rol</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Schema</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Table</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Column</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Nullable</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Is in PK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Id</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (128)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">128</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">ID autogenerado por sistema</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Email</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (256)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">256</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">el email que usará el usuario para ser registrado y con el cuál se operará con la cuenta</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">EmailConfirmed</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Bit</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">PasswordHash</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarCharMax</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">-1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">hash creada para esta password</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">SecurityStamp</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarCharMax</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">-1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">estampa de seguridad con la cual se opera</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">PhoneNumber</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarCharMax</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">-1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">PhoneNumberConfirmed</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Bit</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">TwoFactorEnabled</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Bit</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">LockoutEndDateUtc</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">8</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">LockoutEnabled</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Bit</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AccessFailedCount</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Int</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
+    <Cell ss:StyleID="s75"><Data ss:Type="String">dbo</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">AspNetUsers</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">UserName</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">NVarChar (256)</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">256</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">nombre del usuario, para SimceAutenticación, corresponde al cuerpo del rut de los usuarios</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SIMCE_CONVOCATORIAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SIMCE_CONVOCATORIAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Postulante" EntityType="SIMCE_CONVOCATORIAModel.Postulante" />
+    <EntitySet Name="TABGEN_Region" EntityType="SIMCE_CONVOCATORIAModel.TABGEN_Region" />
+    <AssociationSet Name="FK_Postulante_TABGEN_Region" Association="SIMCE_CONVOCATORIAModel.FK_Postulante_TABGEN_Region">
+      <End Role="TABGEN_Region" EntitySet="TABGEN_Region" />
+      <End Role="Postulante" EntitySet="Postulante" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Postulante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RUT" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="RUTDigitoVerificador" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoPaterno" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="IdRegion" Type="Int32" />
+    <NavigationProperty Name="TABGEN_Region" Relationship="SIMCE_CONVOCATORIAModel.FK_Postulante_TABGEN_Region" FromRole="Postulante" ToRole="TABGEN_Region" />
+  </EntityType>
+  <EntityType Name="TABGEN_Region">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Orden" Type="Int32" />
+    <NavigationProperty Name="Postulante" Relationship="SIMCE_CONVOCATORIAModel.FK_Postulante_TABGEN_Region" FromRole="TABGEN_Region" ToRole="Postulante" />
+  </EntityType>
+  <Association Name="FK_Postulante_TABGEN_Region">
+    <End Type="SIMCE_CONVOCATORIAModel.TABGEN_Region" Role="TABGEN_Region" Multiplicity="0..1" />
+    <End Type="SIMCE_CONVOCATORIAModel.Postulante" Role="Postulante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TABGEN_Region">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Postulante">
+        <PropertyRef Name="IdRegion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

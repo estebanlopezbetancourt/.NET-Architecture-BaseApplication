@@ -1,0 +1,26 @@
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.BLL.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.BLL.pdb
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.DAL.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.SL.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\MockUpProject.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\EntityFramework.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.DAL.pdb
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.SL.pdb
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\MockUpProject.pdb
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\bin\Debug\EntityFramework.xml
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\obj\Debug\BaseApplication.BLL.csprojResolveAssemblyReference.cache
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\obj\Debug\BaseApplication.BLL.dll
+C:\dev\Capacitacion\BaseApplication\BaseApplication.BLL\obj\Debug\BaseApplication.BLL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.BLL.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.BLL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.DAL.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.SL.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\MockUpProject.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\EntityFramework.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.DAL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\BaseApplication.SL.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\MockUpProject.pdb
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\bin\Debug\EntityFramework.xml
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\obj\Debug\BaseApplication.BLL.csprojResolveAssemblyReference.cache
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\obj\Debug\BaseApplication.BLL.dll
+C:\Simce2015Capacitacion\ELopez\Capacitacion NET\Clase 02 - Arquitectura in Action . DB Layer\BaseApplication\BaseApplication.BLL\obj\Debug\BaseApplication.BLL.pdb
